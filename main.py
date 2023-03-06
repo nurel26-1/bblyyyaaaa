@@ -15,6 +15,7 @@ async def begin(massage: types.Message):
     await bot.send_message(massage.chat.id, "hello")
 
 
+
 @dp.message_handler(content_types=['text'])
 async def text(massage: types.Message):
     url = "https://ru.wikipedia.org/w/index.php?go=Перейти&search=" + massage.text
