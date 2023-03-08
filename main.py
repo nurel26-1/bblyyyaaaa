@@ -6,13 +6,14 @@ from bs4 import BeautifulSoup
 
 from selenium import webdriver
 
-bot = Bot(token='6035103069:AAG4-9-6rgCvmSpwHar665UDXqejBwFPf7U')
+bot = Bot(token='6072691958:AAEMui7f3Eyuqnx8gGKob0UPiHe4k1lhFf0')
 dp = Dispatcher(bot)
 
 
 @dp.message_handler(commands=['start'])
 async def begin(massage: types.Message):
     await bot.send_message(massage.chat.id, "hello")
+
 
 
 
@@ -40,3 +41,5 @@ async def text(massage: types.Message):
 
 
 executor.start_polling(dp)
+
+
